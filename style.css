@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    background-color: #d4d5b3;
+    flex-direction: column;
+    background-image: url(background_2.png);
+  }
+
+  /* Button container styling */
+.button-container {
+    display: flex;
+    flex-direction:row; /* Arrange buttons vertically */
+    gap: 10px;
+    width: 10%;
+    padding: 10px;
+    box-shadow: none; /* Remove shadow */
+    margin-top: 20px; /* Space from other content */
+    
+  }
+
+  .button-container button,
+.button-container a {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #01223a;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.button-container button:hover,
+.button-container a:hover {
+  background-color: #08395c;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 0; /* Remove margin to align with the top of the page */
+    margin-left: 300px; /* Adjust for the width of the side panel */
+   
+    padding: 0;
+    position: relative;
+  }
+
+  .header-title {
+    font-family: "Source Code Pro", monospace;
+    font-size: 35px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Space below the header */
+    margin-right: 10px;
+    text-align:left; /* Center the header text */
+    color: #01223a; /* Optional: change the text color */
+
+  }

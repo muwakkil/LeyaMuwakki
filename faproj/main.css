@@ -1,0 +1,111 @@
+/* Body styles */
+body {
+    background-color: rgb(5, 30, 32);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to full viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Button container for fixed position */
+.button-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Button styles */
+.button-container .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Source Code Pro", monospace;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #01223a;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Hover effect for the button */
+.button-container .button:hover {
+    background-color: #08395c;
+}
+
+/* Horizontal scroll container */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Image wrapper to hold image and description */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Image styles */
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Description styling */
+.description {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    padding: 20px; 
+    background-color: rgba(38, 86, 75, 0.569);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Show description on hover */
+.image-wrapper:hover .description {
+    opacity: 1;
+}
+
+/* Image hover effect */
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Hide scrollbars
+.scroll-container::-webkit-scrollbar {
+    display: none;
+} */
+/* Show horizontal scrollbar for other browsers */
+.scroll-container {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #e8a4a4; /* Firefox */
+
+}
