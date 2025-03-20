@@ -5,30 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="icon" type="image/x-icon" href="Favicon.ico">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
 </head>
 
-
 <body>
-        <h1> 
-            <div id="header">
-                <div class="header-title">LEYA MUWAKKI</div>
-        </h1> 
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        <div class="header-title">LEYA MUWAKKI</div>
         <div class="button-container">
-            <a href="vcuproj/Exercise.html" class="button" id="Exercises-button">VCU Projects</a>
-            <a href="faproj/Exercise.html" class="button" id="Exercises-button">Fine Art Projects</a>
-            <a href="caseproj/Exercise.html" class="button" id="Exercises-button">Case Projects</a>
-
-        <button id="refresh-button">Refresh</button>
+            <a href="vcuproj/Exercise.html" class="button">GRAPHIC DESIGN</a>
+            <a href="caseproj/Exercise.html" class="button">WEB DESIGN</a>
+            <a href="faproj/Exercise.html" class="button">FINE ART</a>
+            <!-- <a href="meme/Exercise.html" class="button">ME?</a> -->
+        
         </div>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="image3.jpg" alt="Image 3">
+          </div>
+         <div class="slide">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+      
+        <!-- Navigation Buttons -->
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+      
+      <!-- Caption outside the slideshow -->
+      <div class="caption">Caption for the current image</div>
+
+         <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-description">
+          <p>Hi, I'm Leya Muwakki, a passionate designer from the Middle East, blending contemporary and traditional design elements. I focus on creating engaging user experiences and exploring the intersection of technology and art.</p>
+      </div>
+      <div class="footer-contact">
+          <p>Phone: (703) 332-9491</p>
+          <p>Email: lmuwakki@gmail.com</p>
+      </div>
+  </footer>
 
 
 
- <script src="scripts.js"></script>
- </body>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
