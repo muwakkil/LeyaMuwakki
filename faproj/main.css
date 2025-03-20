@@ -66,9 +66,9 @@ body {
 
 /* Image styles */
 img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
+    width: auto;
+    height: 450px;
+    
     transition: transform 0.3s ease;
 }
 
@@ -90,7 +90,7 @@ img:hover {
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 8px; 
+     
     display: flex;
     align-items: center;
     justify-content: center;

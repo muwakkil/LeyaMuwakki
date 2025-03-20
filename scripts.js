@@ -13,7 +13,7 @@ function showSlide(index) {
 let autoSlide = setInterval(() => {
   slideIndex = (slideIndex + 1) % slides.length;
   showSlide(slideIndex);
-}, 4000); // 5000ms = 4 seconds
+}, 3000); // 5000ms = 4 seconds
 
 // Stop auto-slideshow when user manually clicks the buttons
 document.querySelector(".prev").addEventListener("click", () => {
