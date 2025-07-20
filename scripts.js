@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll(".slide");
 const caption = document.querySelector(".caption");
-const captions = ["Caption 1", "Caption 2", "Caption 3", "Caption 4", "Caption 5", "Caption 6","Caption 7",]; // Add your image captions here
+const captions = ["L", "E", "Y", "A", "<3", "<3","<3",]; // Add your image captions here
 let slideIndex = 0;
 
 function showSlide(index) {

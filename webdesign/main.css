@@ -1,0 +1,120 @@
+/* Body styles */
+body {
+    background-color: #d6d7cc;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to full viewport */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    
+    
+}
+
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+      }
+  
+  
+  
+  /* Logo Styling */
+  .logo {
+    position: absolute;
+  top: 15px; /* Adjust this if needed */
+  left: 33px; /* Adjust this if needed */
+  height: 60px;
+  width: auto;
+  cursor: pointer;
+  }
+  
+  
+  
+  
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
+/* Horizontal scroll container */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding-top: 150px; /* Moves content down */
+    padding-left: 22px; /* Moves content right */
+    box-sizing: border-box;
+    width: 100vw;
+    justify-content: flex-start;
+}
+
+/* Image wrapper to hold image and description */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Image styles */
+img {
+    width: 600px;
+    height: auto;
+    
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Description styling */
+.description {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    padding: 20px; 
+    background-color: rgba(20, 28, 26, 0.569);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Source Code Pro", monospace;
+}
+
+/* Show description on hover */
+.image-wrapper:hover .description {
+    opacity: 1;
+}
+
+/* Image hover effect */
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Hide scrollbars
+.scroll-container::-webkit-scrollbar {
+    display: none;
+} */
+/* Show horizontal scrollbar for other browsers */
+.scroll-container {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #e8a4a4; /* Firefox */
+
+}
