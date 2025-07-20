@@ -114,6 +114,6 @@ img:hover {
 /* Show horizontal scrollbar for other browsers */
 .scroll-container {
     scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #888 #e8a4a4; /* Firefox */
+    scrollbar-color: #e8a4a4; /* Firefox */
 
 }
