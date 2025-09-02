@@ -1,0 +1,46 @@
+/* Body styles */
+body {
+    background-color: #d6d7cc;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to full viewport */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    
+    
+}
+
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+      }
+  
+  
+  
+  /* Logo Styling */
+  .logo {
+    position: absolute;
+  top: 15px; /* Adjust this if needed */
+  left: 33px; /* Adjust this if needed */
+  height: 60px;
+  width: auto;
+  cursor: pointer;
+  }
+  
+  
+  
+  
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
